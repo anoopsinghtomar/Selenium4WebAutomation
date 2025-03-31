@@ -7,26 +7,10 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import com.github.javafaker.Faker;
 
-import baseTest.BaseClass;
 import pageObjects.AccountRegistrationPage;
 import pageObjects.HomePage;
 
-public class AccountRegistrationTest {
-	
-	public WebDriver driver;
-	
-	/*
-	 * public AccountRegistrationTest(WebDriver driver) { super(driver); }
-	 */	
-	@BeforeTest
-	public void setup() {
-		driver = new ChromeDriver();
-		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
-		driver.get("https://tutorialsninja.com/demo/");
-		driver.manage().window().maximize();
-	}
+public class AccountRegistrationTest extends BaseClass {
 	
 	@Test
 	public void AccountRegistration() {
@@ -51,11 +35,5 @@ public class AccountRegistrationTest {
 		
 		String conmsg = regPage.getConfirmationMsg();
 		Assert.assertEquals(conmsg, "Your Account Has Been Created!");
-	}
-	
-	@AfterTest
-	public void tearDown() {
-		 if (driver != null) {
-	            driver.quit(); }
 	}
 }
