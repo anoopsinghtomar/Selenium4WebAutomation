@@ -1,29 +1,26 @@
 package testCase;
 
-import java.time.Duration;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import com.github.javafaker.Faker;
 
 import pageObjects.AccountRegistrationPage;
 import pageObjects.HomePage;
+import testClass.BaseClass;
 
 public class AccountRegistrationTest extends BaseClass {
 	
 	@Test
 	public void AccountRegistration() {
 		
-		Faker faker = new Faker();
-		String password = faker.internet().password(5, 8, true);
-				
+		try {
 		HomePage hp = new HomePage(driver);
 		hp.clickMyAccount();
 		hp.clickRegistratin();
 		
 		AccountRegistrationPage regPage = new AccountRegistrationPage(driver);
 		
+		logger.info("enter customer details");
 		regPage.setFirstName(faker.name().firstName());
 		regPage.setLastName(faker.name().lastName());
 		regPage.setEmail(faker.internet().emailAddress());
@@ -35,5 +32,13 @@ public class AccountRegistrationTest extends BaseClass {
 		
 		String conmsg = regPage.getConfirmationMsg();
 		Assert.assertEquals(conmsg, "Your Account Has Been Created!");
+		
+		logger.info("account registered");
 	}
+	catch (Exception e) {
+		logger.error("account registration failed");
+		logger.debug("Debug logs...");
+		Assert.fail();
+	}
+}
 }

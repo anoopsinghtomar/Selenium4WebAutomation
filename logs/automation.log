@@ -1,0 +1,12 @@
+14:34:02.517 [main] INFO  testCase.AccountRegistrationTest - account registered
+14:35:09.997 [main] INFO  testCase.AccountRegistrationTest - enter customer details
+14:35:14.173 [main] INFO  testCase.AccountRegistrationTest - account registered
+14:40:04.908 [main] INFO  testCase.AccountRegistrationTest - enter customer details
+14:40:08.923 [main] ERROR testCase.AccountRegistrationTest - account registration failed
+14:40:08.924 [main] DEBUG testCase.AccountRegistrationTest - Debug logs...
+14:41:01.187 [main] INFO  testCase.AccountRegistrationTest - enter customer details
+14:41:07.236 [main] INFO  testCase.AccountRegistrationTest - account registered
+14:49:36.473 [main] INFO  testCase.AccountRegistrationTest - enter customer details
+14:49:40.354 [main] INFO  testCase.AccountRegistrationTest - account registered
+14:54:38.826 [main] INFO  testCase.AccountRegistrationTest - enter customer details
+14:54:42.997 [main] INFO  testCase.AccountRegistrationTest - account registered
