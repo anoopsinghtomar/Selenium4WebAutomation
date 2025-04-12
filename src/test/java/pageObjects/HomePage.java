@@ -18,11 +18,18 @@ public class HomePage extends BasePage {
 	@FindBy(xpath="//*[@id=\"top-links\"]/ul/li[2]/ul/li[1]/a")
 	WebElement linkRegistration;
 	
+	@FindBy(linkText="Login")
+	WebElement linkLogin;
+	
 	public void clickMyAccount() {
 		linkMyAccount.click(); 
 	}
 	
 	public void clickRegistratin() {
 		linkRegistration.click();
+	}
+	
+	public void clickLogin() {
+		linkLogin.click();
 	}
 }

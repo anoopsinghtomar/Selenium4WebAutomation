@@ -10,3 +10,45 @@
 14:49:40.354 [main] INFO  testCase.AccountRegistrationTest - account registered
 14:54:38.826 [main] INFO  testCase.AccountRegistrationTest - enter customer details
 14:54:42.997 [main] INFO  testCase.AccountRegistrationTest - account registered
+15:30:42.132 [main] INFO  testCase.AccountRegistrationTest - enter customer details
+15:30:47.065 [main] INFO  testCase.AccountRegistrationTest - account registered
+15:38:28.406 [main] INFO  testCase.AccountRegistrationTest - enter customer details
+15:38:32.451 [main] INFO  testCase.AccountRegistrationTest - account registered
+15:38:44.789 [main] INFO  testCase.AccountRegistrationTest - enter customer details
+15:38:47.896 [main] INFO  testCase.AccountRegistrationTest - account registered
+15:42:14.127 [main] INFO  testCase.AccountRegistrationTest - enter customer details
+15:42:17.115 [main] INFO  testCase.AccountRegistrationTest - account registered
+15:42:22.960 [main] INFO  testCase.AccountRegistrationTest - enter customer details
+15:42:25.916 [main] INFO  testCase.AccountRegistrationTest - account registered
+16:04:32.699 [TestNG-tests-2] INFO  testCase.AccountRegistrationTest - enter customer details
+16:04:33.078 [TestNG-tests-1] INFO  testCase.AccountRegistrationTest - enter customer details
+16:04:39.229 [TestNG-tests-1] INFO  testCase.AccountRegistrationTest - account registered
+16:04:40.437 [TestNG-tests-2] INFO  testCase.AccountRegistrationTest - account registered
+16:05:34.072 [main] INFO  testCase.AccountRegistrationTest - enter customer details
+16:05:37.506 [main] INFO  testCase.AccountRegistrationTest - account registered
+16:24:33.217 [TestNG-tests-1] INFO  testCase.AccountRegistrationTest - enter customer details
+16:24:33.784 [TestNG-tests-2] INFO  testCase.AccountRegistrationTest - enter customer details
+16:24:41.503 [TestNG-tests-1] INFO  testCase.AccountRegistrationTest - account registered
+16:24:42.400 [TestNG-tests-2] INFO  testCase.AccountRegistrationTest - account registered
+16:14:01.943 [TestNG-tests-1] INFO  testCase.loginTest - *** starting login ***
+16:14:04.307 [TestNG-tests-2] INFO  testCase.AccountRegistrationTest - enter customer details
+16:14:08.173 [TestNG-tests-2] INFO  testCase.AccountRegistrationTest - account registered
+16:14:54.085 [main] INFO  testCase.loginTest - *** starting login ***
+16:38:23.308 [main] INFO  testCase.loginTest - *** starting login ***
+16:43:15.598 [main] INFO  testCase.loginTest - *** starting login ***
+16:46:20.558 [main] INFO  testCase.loginTest - *** starting login ***
+17:46:06.810 [main] INFO  testCase.loginTest - *** starting login ***
+17:55:57.643 [main] INFO  testCase.loginTest - *** starting login ***
+17:56:52.371 [main] INFO  testCase.loginTest - *** starting login ***
+17:56:53.135 [main] ERROR testCase.loginTest - ❌ Email or password is null. Check your config.properties file.
+17:59:13.740 [main] INFO  testCase.loginTest - *** starting login ***
+17:59:14.689 [main] ERROR testCase.loginTest - ❌ Email or password is null. Check your config.properties file.
+18:05:58.467 [main] INFO  testCase.loginTest - *** starting login ***
+18:05:59.275 [main] ERROR testCase.loginTest - ❌ Email or password is null. Check your config.properties file.
+18:13:24.214 [main] INFO  testCase.loginTest - *** starting login ***
+18:13:26.499 [main] INFO  testCase.loginTest - logged in successfully
+18:16:04.986 [main] INFO  testCase.loginTest - *** starting login ***
+18:16:06.274 [main] INFO  testCase.loginTest - logged in successfully
+18:24:51.032 [main] INFO  testCase.loginTest - *** starting login ***
+18:29:54.558 [main] INFO  testCase.loginTest - *** starting login ***
+18:29:56.858 [main] INFO  testCase.loginTest - logged in successfully

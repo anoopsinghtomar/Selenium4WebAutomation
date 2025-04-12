@@ -1,5 +1,7 @@
 package testClass;
 
+import java.io.FileReader;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 import java.util.ResourceBundle;
@@ -27,16 +29,21 @@ public class BaseClass {
 	public Faker faker = new Faker();
 	public String password = faker.internet().password(5, 8, true);
 	
-	static ResourceBundle getURL() { //method to access config.propertiles FILE
-		ResourceBundle api = ResourceBundle.getBundle("config");
-		return api;
-	}
-	
-	String appUrl = getURL().getString("appURL");
-	
+	/*
+	 * static ResourceBundle getURL() { //method to access config.propertiles FILE
+	 * ResourceBundle api = ResourceBundle.getBundle("config"); return api; }
+	 * 
+	 * String appUrl = getURL().getString("appURL");
+	 */
+		
 	@BeforeTest
 	@Parameters({"os","browser"})
-	public void setup(String os, String browser) {
+	public void setup(String os, String browser) throws IOException{
+		
+		//Loading config.properties file
+		FileReader file = new FileReader("src/test/resources/config.properties");
+		properties = new Properties();
+		properties.load(file);
 		
 		switch(browser.toLowerCase()) {
 		case "chrome": driver = new ChromeDriver(); break;
@@ -46,9 +53,10 @@ public class BaseClass {
 		}
 		
 		driver.manage().deleteAllCookies();
+		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
-		driver.get(appUrl);
+		driver.get(properties.getProperty("appURL"));
 		driver.manage().window().maximize();
 		
 		logger = LogManager.getLogger(this.getClass()); // logging test script
